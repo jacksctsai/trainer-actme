@@ -3,6 +3,7 @@ title: Actme
 ---
 
 <div id="wrap-header">
+  <div id="header-left-bg"></div>
   <div id="header">
     <ul id="nav">
       <li id="nav-item-logo" class="nav-item">
@@ -35,111 +36,146 @@ title: Actme
       </li>
     </ul>
   </div>
+  <div id="header-right-bg"></div>
 </div>
-<div id="body">
+<div id="main">
   <div id="slider">
     <h2 id="slider-title">Slider Options for every slider / template</h2>
     <h3 id="slider-subtitle">Slider Options, 2 effects, time and hover pause</h3>
     <div id="slider-controller">
-      <div id="slider-left"></div>
-      <div id="slider-right"></div>
+      <a id="slider-prev" href="#">Previous</a>
+      <a id="slider-next" href="#">Next</a>
       <div id="slider-draging">
-        <div id="slider-pin"></div>
+        <a id="slider-pin" href="#">Move To</a>
       </div>
     </div>
   </div>
   <div id="personal">
-    <div id="personal-name">My name is Jonathan Sense.<br>Below is a collection of some of my best pics.</div>
-    <div id="personal-link-gallery">
-      <a id="link-personal-gallery" href="#" title="Check out my Gallery">Check out my Gallery</a>
-    </div>
-    <div id="personal-social-netsorks">
-      <a id="link-social-network" href="#" title="facebook">facebook</a>
-      <a id="link-social-network" href="#" title="twitter">twitter</a>
-      <a id="link-social-network" href="#" title="dribbble">dribbble</a>
-      <a id="link-social-network" href="#" title="flickr">flickr</a>
-      <a id="link-social-network" href="#" title="deviantart">deviantart</a>
-      <a id="link-social-network" href="#" title="behance">behance</a>
-      <a id="link-social-network" href="#" title="vimeo">vimeo</a>
-      <a id="link-social-network" href="#" title="xing">xing</a>
+    <h4 id="personal-title">PERSONAL</h4>
+    <img id="person-photo" src="/img/alina.jpeg" alt="Jonathan Sense">
+    <div id="personal-detail">
+      <div id="personal-info">
+        <div id="personal-name-container">
+          <div id="personal-name">My name is Jonathan Sense.<br>Below is a collection of some of my best pics.</div>
+        </div>
+        <div id="personal-link-gallery">
+          <a id="link-personal-gallery" href="#" title="Check out my Gallery">Check out my Gallery</a>
+        </div>
+        <div id="personal-social-networks-container">
+          <div id="personal-social-networks">
+            <a id="link-social-network-facebook" class="link-social-network" href="#" title="facebook">facebook</a>
+            <a id="link-social-network-twitter" class="link-social-network" href="#" title="twitter">twitter</a>
+            <a id="link-social-network-dribbble" class="link-social-network" href="#" title="dribbble">dribbble</a>
+            <a id="link-social-network-flickr" class="link-social-network" href="#" title="flickr">flickr</a>
+            <a id="link-social-network-deviantart" class="link-social-network" href="#" title="deviantart">deviantart</a>
+            <a id="link-social-network-behance" class="link-social-network" href="#" title="behance">behance</a>
+            <a id="link-social-network-vimeo" class="link-social-network" href="#" title="vimeo">vimeo</a>
+            <a id="link-social-network-xing" class="link-social-network" href="#" title="xing">xing</a>
+          </div>
+        </div>
+      </div>      
     </div>
   </div>
   <div id="tweets">
-    <div class="tweet">Check out this item 'Sense - Semi-liquid Premium Wordpress Theme for Creative \ Protfolio or Blog Magazine by IulianN.' <a href="http://t.co/tp8gZeS" title="http://t.co/tp8gZeS">http://t.co/tp8gZeS</a><span class="tweet-datetime">15 days ago</span></div>
-    <div class="tweet">Check out this great WordPress Premium Theme 'Bestia - Creative Portfolio and Blog WP Theme' by IulianN. <a href="http://t.co/AKjl6Sk" title="http://t.co/AKjl6Sk">http://t.co/AKjl6Sk</a><span class="tweet-datetime">15 days ago</span></div>
-  </div>
+    <h4 id="tweets-title">TWEETS</h4>
+    <div id="tweets-list">
+      <div class="tweet">Check out this item 'Sense - Semi-liquid Premium Wordpress Theme for Creative \ Protfolio or Blog Magazine by IulianN.' <a class="link-on-tweets" href="http://t.co/tp8gZeS" title="http://t.co/tp8gZeS">http://t.co/tp8gZeS</a><span class="tweet-datetime">15 days ago</span></div>
+      <div class="tweet">Check out this great WordPress Premium Theme 'Bestia - Creative Portfolio and Blog WP Theme' by IulianN. <a class="link-on-tweets" href="http://t.co/AKjl6Sk" title="http://t.co/AKjl6Sk">http://t.co/AKjl6Sk</a><span class="tweet-datetime">15 days ago</span></div>
+      </div>
+    </div>
+    <div id="tweets-footer"></div>
   <div id="blogs">
-    <div class="blog-entry">
-      <div class="blog-entry-title">
-          <a href="#" title="This is a nice post for o ..">This is a nice post for o ..</a>
+    <h4 id="blogs-title">BLOG</h4>
+    <div id="blog-entry-list">
+      <div id="blog-entry-1" class="blog-entry">
+        <div class="blog-entry-title">
+            <a class="link-blog-entry" href="#" title="This is a nice post for o ..">This is a nice post for o ..</a>
+        </div>
+        <div class="blog-entry-preview">Lorem ipsum dolor sit amet, consecteuter adipiscing elit.<br>Aenean ligula eget ...</div>
+        <div class="blog-entry-footer"></div>
       </div>
-      <div class="blog-entry-preview">Lorem ipsum dolor sit amet, consecteuter adipiscing elit.<br>Aenean ligula eget ...</div>
-    </div>
-    <div class="blog-entry">
-      <div class="blog-entry-title">
-        <a href="#" title="I diligently worked to pe ..">I diligently worked to pe ..</a>
+      <div id="blog-entry-2" class="blog-entry">
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="I diligently worked to pe ..">I diligently worked to pe ..</a>
+        </div>
+        <div class="blog-entry-preview">Buck's first day on the Deya beach was like a nightmare. Every hour was ...</div>
+        <div class="blog-entry-footer"></div>
       </div>
-      <div class="blog-entry-preview">Buck's first day on the Deya beach was like a nightmare. Every hour was ...</div>
-    </div>
-    <div class="blog-entry">
-      <div class="blog-entry-title">
-          <a href="#" title="Great choice for you">Great choice for you</a>
+      <div id="blog-entry-3" class="blog-entry">
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Great choice for you">Great choice for you</a>
+        </div>
+        <div class="blog-entry-preview">It led, briefly, in the course of the October afternoon, to his closer meeting ...</div>
+        <div class="blog-entry-footer"></div>
       </div>
-      <div class="blog-entry-preview">It led, briefly, in the course of the October afternoon, to his closer meeting ...</div>
-    </div>
-    <div class="blog-entry">
-      <div class="blog-entry-title">
-          <a href="#" title="Get a littel help about D..">Get a littel help about D..</a>
+      <div id="blog-entry-4" class="blog-entry">
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Beautiful things in life, ..">Beautiful things in life, ..</a>
+        </div>
+        <div class="blog-entry-preview">It led, briefly, in the course of the October afternoon, to his closer meeting ...</div>
+        <div class="blog-entry-footer"></div>
       </div>
-      <div class="blog-entry-preview">What determined the speech that startled him in the course of their encounter ...</div>
-    </div>
-    <div class="blog-entry">
-      <div class="blog-entry-title">
-          <a href="#" title="Something To Be Done ..">Something To Be Done ..</a>
+      <div id="blog-entry-5" class="blog-entry">
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Get a littel help about D..">Get a littel help about D..</a>
+        </div>
+        <div class="blog-entry-preview">What determined the speech that startled him in the course of their encounter ...</div>
+        <div class="blog-entry-footer"></div>
       </div>
-      <div class="blog-entry-preview">He was a very sick white man. He rode pick-a-back on a woolly-headed, ...</div>
-    </div>
-    <div class="blog-entry">
-      <div class="blog-entry-title">
-          <a href="#" title="Great pic and great reali ..">Great pic and great reali ..</a>
+      <div id="blog-entry-6" class="blog-entry">
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Something To Be Done ..">Something To Be Done ..</a>
+        </div>
+        <div class="blog-entry-preview">He was a very sick white man. He rode pick-a-back on a woolly-headed, ...</div>
+        <div class="blog-entry-footer"></div>
       </div>
-      <div class="blog-entry-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus sagittis ...</div>
-    </div>
-    <div class="blog-entry">
-      <div class="blog-entry-title">
-          <a href="#" title="Realistic imagery can tra ..">Realistic imagery can tra ..</a>
+      <div id="blog-entry-7" class="blog-entry">
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Great pic and great reali ..">Great pic and great reali ..</a>
+        </div>
+        <div class="blog-entry-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus sagittis ...</div>
+        <div class="blog-entry-footer"></div>
       </div>
-      <div class="blog-entry-preview">Vestibulum eget porttitor ante.<br>Donec consectetur odio in ligula bibendum ...</div>
+      <div id="blog-entry-8" class="blog-entry">
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Realistic imagery can tra ..">Realistic imagery can tra ..</a>
+        </div>
+        <div class="blog-entry-preview">Vestibulum eget porttitor ante.<br>Donec consectetur odio in ligula bibendum ...</div>
+        <div class="blog-entry-footer"></div>
+      </div>
     </div>
   </div>
   <div id="page-index">
-      <ul id="pages-nav">
-        <li class="link-page-1">
-          <a class="link-page-1" href="#" title"Goto page 1">1</a>
-        </li>
-        <li class="link-page-2">
-          <a class="link-page-2" href="#" title"Goto page 2">2</a>
-        </li>
-        <li class="link-next-page">
-          <a class="link-next-page" href="#" title"Goto next page">2</a>
-        </li>
-      </ul>
-      <div id="page-number">Page 1 of 2</div>
+      <div id="page-index-nav">
+        <ul id="pages-nav">
+          <li id="page-1" class="page-nav-item">
+            <a id="link-page-1" class="link-page" href="#" title"Goto page 1">1</a>
+          </li>
+          <li id="page-2" class="page-nav-item">
+            <a id="link-page-2" class="link-page" href="#" title"Goto page 2">2</a>
+          </li>
+          <li id="next-page" class="page-nav-item">
+            <a id="link-next-page" class="link-page" href="#" title"Goto next page">»</a>
+          </li>
+        </ul>
+        <div id="page-number">Page 1 of 2</div>
+      </div>
+      <div id="page-index-footer"></div>
   </div>
 </div>
 <div id="footer">
-  <div id="wrap">
+  <div id="wrap-footer">
     <div id="related-links">
-      <a id="link-rss" href="#" title="Subscribe us!">Scribe our RSS feed</a>
-      <a id="link-facebook" href="#" title="Facebook">Check out our faceback fans page</a>
-      <a id="link-twitter" href="#" title="Twitter">Follow us on Twitter!</a>
+      <a id="link-rss" class="link-related-icon" href="#" title="Subscribe us!">Scribe our RSS feed</a>
+      <a id="link-facebook" class="link-related-icon" href="#" title="Facebook">Check out our faceback fans page</a>
+      <a id="link-twitter" class="link-related-icon" href="#" title="Twitter">Follow us on Twitter!</a>
       <p id="copy-rights">Copyright 2011</p>
-      <a id="link-home" href="#" class="links-site-content" title="Home">Home</a>
-      <a id="link-blog" href="#" class="links-site-content" title="Blog">Blog</a>
-      <a id="link-404" href="#" class="links-site-content" title="404">404</a>
-      <a id="link-sitemap" href="#" class="links-site-content" title="Sitemap">Sitemap</a>
-      <a id="link-contact" href="#" class="links-site-content" title="Contact">Contact</a>
-      <a id="link-theme-designer" title="Themes designed by lulianN">Wordpress Theme by lulianN</a>
+      <a id="link-home" class="link-related" href="#" class="links-site-content" title="Home">Home</a>
+      <a id="link-blog" class="link-related" href="#" class="links-site-content" title="Blog">Blog</a>
+      <a id="link-404" class="link-related" href="#" class="links-site-content" title="404">404</a>
+      <a id="link-sitemap" class="link-related" href="#" class="links-site-content" title="Sitemap">Sitemap</a>
+      <a id="link-contact" class="link-related" href="#" class="links-site-content" title="Contact">Contact</a>
+      <a id="link-theme-designer" class="link-related" title="Themes designed by lulianN">Wordpress Theme by lulianN</a>
     </div>
   </div>
 </div>

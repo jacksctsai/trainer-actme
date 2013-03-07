@@ -3,17 +3,41 @@
 
 $default-font: Arial, Helvetica, sans-serif
 
+body
+  background: url( "/img/bg-body.png" )
 
 #header
+  +clearfix
   background: url( "/img/header-center-bg.png" ) no-repeat
   height: 47px
   margin: 0 auto
-  width: 920px
+  width: 960px
+  z-index: 1
+
+#header-left-bg
+  background: url( "/img/header-left-bg.png" ) repeat-x
+  position: absolute
+  height: 47px
+  top: 0
+  left: 0
+  right: 0
+  margin: 0 50% 0 0
+  z-index: -1
+
+#header-right-bg
+  background: url( "/img/header-right-bg.png" ) repeat-x
+  height: 47px
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  margin: 0 0 0 50%
+  z-index: -1
 
 .nav-item
   float: left
   height: 47px
-  margin: 0 10px 0 30px
+  margin: 0 0 0 35px
 
 #nav-item-logo
   margin: 0
@@ -50,9 +74,447 @@ $default-font: Arial, Helvetica, sans-serif
   height: 27px
   width: 210px
 
-#body
+#main
+  +clearfix
   margin: 0 auto
-  width: 920px
+  width: 980px
 
+#slider
+  +clearfix
+  background: url( "/img/51.jpeg" ) no-repeat
+  background-position: center center
+  background-color: #e6e4e2
+  padding: 10px
+  position: relative
+  height: 500px
+  width: 940px
+
+#slider-title
+  background-color: rgba( 0, 0, 0, 0.6 )
+  color: rgba( 249, 246, 239, 0.6 )
+  font-family: $default-font
+  font-size: 22px
+  height: 20px
+  padding: 15px
+  position: absolute
+  top: 80px
+  left: 20px
+  width: 392px
+
+#slider-subtitle
+  background-color: rgba( 254, 254, 254, 0.7 )
+  color: rgba( 68, 68, 72, 0.6 )
+  font-family: $default-font
+  font-size: 13px
+  height: 10px
+  padding: 15px 13px 15px 20px
+  position: absolute
+  top: 130px
+  left: 20px
+  width: 290px
+
+#slider-controller
+  position: absolute
+  top: 483px
+  left: 40px
+
+#slider-prev
+  +hide-text
+  background: url( "/img/arrow-prev2.png" )
+  display: block
+  float: left
+  height: 15px
+  width: 15px
+
+#slider-next
+  +hide-text
+  background: url( "/img/arrow-next2.png" )
+  display: block
+  float: left
+  height: 15px
+  width: 15px
+
+#slider-draging
+  background: url( "/img/pagination.png" )
+  float: left
+  height: 8px
+  top: 5px
+  left: 15px
+  position: relative
+  width: 90px
+
+#slider-pin
+  +hide-text
+  background: url( "/img/pagination.png" ) top 8px left 0px
+  display: block
+  height: 8px
+  position: absolute
+  left: 45px
+  width: 16px
+
+#personal
+  +clearfix
+  float: left
+  width: 510px
+  padding: 40px 30px 0 0
+
+#personal-title
+  +hide-text
+  background: url( "/img/personal.png" )
+  display: block
+  float: left
+  height: 64px
+  width: 14px
+
+#person-photo
+  display: block
+  float: left
+  height: 230px
+  width: 230px
+
+#personal-detail
+  +clearfix
+  float: left
+  background: url( "/img/personal-nav.png" ) no-repeat
+  background-position: bottom right
+  background-color: white
+  width: 260px  
+
+#personal-info
+  +clearfix
+  background-color: white
+  float: left
+  padding: 25px 10px
+  width: 290px
+
+#personal-name-container
+  +clearfix
+  background: url( "/img/entry-quote.png" ) no-repeat
+  background-position: center left 10px
+  background-color: white
+  float: left
+  padding: 0 0 0 40px
+  margin: 0 0 20px
+  width: 210px
+
+#personal-name
+  +clearfix
+  background-color: white
+  border-left: 2px solid #c7ccd2
+  font-family: $default-font
+  font-size: 13px
+  line-height: 20px
+  padding: 15px 10px 15px 20px
+  width: 170px
+
+#personal-link-gallery
+  background: url( "/img/entry-link.png" ) no-repeat
+  background-position: center left 10px
+  background-color: white
+  float: left
+  padding: 10px 10px 10px 40px
+  margin: 0 0 20px
+  width: 210px
+
+#link-personal-gallery
+  +clearfix
+  background-color: white
+  border-left: 2px solid #c7ccd2
+  color: black
+  font-family: $default-font
+  font-size: 13px
+  line-height: 20px
+  padding: 15px 10px 15px 20px
+  text-decoration: none
+  width: 170px
+
+#personal-social-networks-container
+  background: url( "/img/entry-users.png" ) no-repeat
+  background-position: center left 10px
+  background-color: white
+  float: left
+  padding: 0 0 0 40px
+  width: 210px
+
+#personal-social-networks
+  +clearfix
+  background-color: white
+  border-left: 2px solid #c7ccd2
+  color: black
+  font-family: $default-font
+  font-size: 13px
+  line-height: 20px
+  padding: 10px 10px 10px 20px
+  text-decoration: none
+  width: 170px
+
+
+#entry-quote.png
+  float: right
+
+.link-social-network
+  +hide-text
+  +clearfix
+  background-position: center center
+  display: block
+  float: left
+  height: 16px
+  padding: 2px
+  width: 16px
+
+#link-social-network-facebook
+  background: url( "/img/facebook.png" ) no-repeat
+
+#link-social-network-twitter
+  background: url( "/img/twitter.png" ) no-repeat
+
+#link-social-network-dribbble
+  background: url( "/img/dribbble.png" ) no-repeat
+
+#link-social-network-flickr
+  background: url( "/img/flickr.png" ) no-repeat
+
+#link-social-network-deviantart
+  background: url( "/img/deviantart.png" ) no-repeat
+
+#link-social-network-behance
+  background: url( "/img/behance.png" ) no-repeat
+
+#link-social-network-vimeo
+  background: url( "/img/vimeo.png" ) no-repeat
+
+#link-social-network-xing
+  background: url( "/img/xing.png" ) no-repeat
+
+#tweets
+  +clearfix
+  background: url( "/img/ribbon-posts.png" ) no-repeat
+  background-position: top 33px right -3px
+  float: left
+  height: 230px
+  width: 420px
+  padding: 40px 0 0
+
+#tweets-title
+  +hide-text
+  background: url( "/img/tweets.png" )
+  display: block
+  float: left
+  height: 64px
+  width: 14px
+
+#tweets-list
+  +clearfix
+  background: url( "/img/line-header.png" )
+  border-radius: 0 7px 0 0
+  padding: 15px
+
+.tweet
+  background-color: white
+  margin: 0 0 15px
+  color: #666665
+  font-family: $default-font
+  font-size: 12px
+  padding: 12px
+  line-height: 20px
+
+.link-on-tweets
+  text-decoration: none
+
+.tweet-datetime
+  font-size: 11px
+  padding: 0 0 0 5px
+
+#tweets-footer
+  +clearfix
+  background: url( "/img/personal-twitter-shadow.png" ) no-repeat
+  background-position: bottom center
+  float: left
+  height: 10px
+  width: 410px
+
+#blogs
+  +clearfix
+  float: left
+  width: 1000px
+  padding: 40px 0 0 0
+
+#blog-entry-list
+  +clearfix
+
+#blogs-title
+  +hide-text
+  background: url( "/img/blog.png" ) no-repeat
+  display: block
+  float: left
+  height: 34px
+  width: 14px
+
+.blog-entry
+  +clearfix
+  float: left
+  height: 140px
+  padding: 130px 35px 30px 0
+  width: 210px
+
+.blog-entry-title
+  +clearfix
+  background-color: white
+  height: 25px
+  padding: 10px 10px 5px
+
+.link-blog-entry
+  color: red
+  font-family: $default-font
+  font-size: 12px
+  font-weight: bold
+  text-decoration: none
+
+.blog-entry-preview
+  +clearfix
+  background-color: white
+  font-familY: $default-font
+  font-size: 12px
+  height: 90px
+  line-height: 18px
+  padding: 0 10px
+
+.blog-entry-footer
+  background: url( "/img/post-personal-shadow.png" ) no-repeat
+  background-position: bottom center
+  height: 10px
+
+#blog-entry-1
+  background: url( "/img/this-is-a-nice-post-for-our-cool-blog.jpeg" ) no-repeat
+
+#blog-entry-2
+  background: url( "/img/2.jpeg" ) no-repeat
+
+#blog-entry-3
+  background: url( "/img/3.jpeg" ) no-repeat
+
+#blog-entry-4
+  background: url( "/img/4-1.jpeg" ) no-repeat
+
+#blog-entry-5
+  background: url( "/img/5.jpeg" ) no-repeat
+
+#blog-entry-6
+  background: url( "/img/6.jpeg" ) no-repeat
+
+#blog-entry-7
+  background: url( "/img/7.jpeg" ) no-repeat
+
+#blog-entry-8
+  background: url( "/img/8.jpeg" ) no-repeat
+
+#page-index
+  +clearfix
+  clear: both
+  padding: 0 0 80px 0
+
+#page-index-nav
+  background-color: white
+  height: 35px
+  margin: 0 auto
+  width: 940px
+
+#pages-nav
+  float: left
+
+.page-nav-item
+  float: left
+  padding: 10px 5px 0 20px
+
+.link-page
+  color: #8b8c8c
+  font-family: $default-font
+  font-size: 12px
+  text-decoration: none
+
+#next-page
+  float: left
+
+#page-number
+  color: #9a9a9a
+  float: right
+  font-family: $default-font
+  font-size: 12px
+  padding: 10px 20px
+
+#page-index-footer
+  background: url( "/img/shadow-slider-fw.png" ) no-repeat
+  background-position: bottom center
+  width: 950px
+  height: 10px
+
+#footer
+  +clearfix
+  background-color: white
+  width: 100%
+
+#wrap-footer
+  +clearfix
+  background: url( "/img/bg-footer-top.png" ) no-repeat
+  background-position: top center
+  width: 960px
+  padding: 30px 0 60px 0
+  margin: 0 auto
+
+#related-links
+  +clearfix
+
+#link-rss
+  +hide-text
+  +clearfix
+  background: url( "/img/rss.png" ) no-repeat
+  display: block
+  float: left
+  height: 16px
+  padding: 1px
+  width: 16px
+
+#link-facebook
+  +hide-text
+  +clearfix
+  background: url( "/img/facebook.png" ) no-repeat
+  display: block
+  float: left
+  height: 16px
+  padding: 1px
+  width: 16px
+
+#link-twitter
+  +hide-text
+  +clearfix
+  background: url( "/img/twitter.png" ) no-repeat
+  display: block
+  float: left
+  height: 16px
+  padding: 1px
+  width: 16px
+
+#copy-rights
+  float: left
+  color: #8b8c8c
+  font-family: $default-font
+  font-size: 12px
+  padding: 0 20px
+
+#link-theme-designer
+  float: right
+
+.link-related-icon
+  display: block
+  float: left
+
+.link-related
+  color: #8b8c8c
+  display: block
+  float: left
+  font-family: $default-font
+  font-size: 12px
+  padding: 0 10px
+  text-decoration: none
 
 
