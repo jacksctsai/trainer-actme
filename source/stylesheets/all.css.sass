@@ -9,109 +9,113 @@ body
 #header
   +clearfix
   background: url( "/img/header-center-bg.png" ) no-repeat
+  width: 960px
   height: 47px
   margin: 0 auto
-  width: 960px
   z-index: 1
 
 #header-left-bg
   background: url( "/img/header-left-bg.png" ) repeat-x
-  position: absolute
   height: 47px
+  margin: 0 50% 0 0
+  position: absolute
   top: 0
   left: 0
   right: 0
-  margin: 0 50% 0 0
   z-index: -1
 
 #header-right-bg
   background: url( "/img/header-right-bg.png" ) repeat-x
   height: 47px
+  margin: 0 0 0 50%
   position: absolute
   top: 0
   left: 0
   right: 0
-  margin: 0 0 0 50%
   z-index: -1
 
+#nav
+  +clearfix
+
 .nav-item
-  float: left
+  +float-left
   height: 47px
   margin: 0 0 0 35px
 
 #nav-item-logo
-  margin: 0
   width: 170px
+  margin: 0
 
 #nav-logo
   +clearfix
   +hide-text
   background: url( "/img/logo.png" ) no-repeat
   display: block
+  width: 150px
   height: 43px
   margin: auto
-  width: 150px
 
 .nav-item-text
-  color: #777777
-  display: block
   font-family: $default-font
   font-size: 12px
+  color: #777777
   text-decoration: none
+  display: block
   padding: 18px 0 0
-
-.nav-item-text:hover
-  color: #bfc1b0
+  &:hover, &:active
+    color: #bfc1b0
 
 #nav-item-search
-  float: right
+  +float-right
   margin: 10px 0
 
 #search
   +hide-text
   background: url( "/img/bg-search.png" ) no-repeat
-  border: none
-  height: 27px
   width: 210px
+  height: 27px
+  border: none
 
 #main
   +clearfix
-  margin: 0 auto
   width: 980px
+  margin: 0 auto
 
 #slider
   +clearfix
   background: url( "/img/51.jpeg" ) no-repeat
   background-position: center center
   background-color: #e6e4e2
+  width: 940px
+  height: 500px
   padding: 10px
   position: relative
-  height: 500px
-  width: 940px
 
 #slider-title
   background-color: rgba( 0, 0, 0, 0.6 )
-  color: rgba( 249, 246, 239, 0.6 )
   font-family: $default-font
   font-size: 22px
+  color: #f9f6ef
+  opacity: 0.6
+  width: 392px
   height: 20px
   padding: 15px
   position: absolute
   top: 80px
   left: 20px
-  width: 392px
 
 #slider-subtitle
   background-color: rgba( 254, 254, 254, 0.7 )
-  color: rgba( 68, 68, 72, 0.6 )
   font-family: $default-font
   font-size: 13px
+  color: #444448
+  opacity: 0.6
+  width: 290px
   height: 10px
   padding: 15px 13px 15px 20px
   position: absolute
   top: 130px
   left: 20px
-  width: 290px
 
 #slider-controller
   position: absolute
@@ -120,82 +124,82 @@ body
 
 #slider-prev
   +hide-text
+  +float-left
   background: url( "/img/arrow-prev2.png" )
   display: block
-  float: left
-  height: 15px
   width: 15px
+  height: 15px
 
 #slider-next
   +hide-text
+  +float-left
   background: url( "/img/arrow-next2.png" )
   display: block
-  float: left
   height: 15px
   width: 15px
 
 #slider-draging
+  +float-left
   background: url( "/img/pagination.png" )
-  float: left
+  width: 90px
   height: 8px
   top: 5px
   left: 15px
   position: relative
-  width: 90px
 
 #slider-pin
   +hide-text
   background: url( "/img/pagination.png" ) top 8px left 0px
   display: block
+  width: 16px
   height: 8px
   position: absolute
   left: 45px
-  width: 16px
 
 #personal
   +clearfix
-  float: left
+  +float-left
   width: 510px
   padding: 40px 30px 0 0
 
 #personal-title
   +hide-text
+  +float-left
   background: url( "/img/personal.png" )
   display: block
-  float: left
-  height: 64px
   width: 14px
+  height: 64px
 
 #person-photo
+  +float-left
   display: block
-  float: left
-  height: 230px
   width: 230px
+  height: 230px
 
 #personal-detail
   +clearfix
-  float: left
+  +float-left
   background: url( "/img/personal-nav.png" ) no-repeat
   background-position: bottom right
   background-color: white
-  width: 260px  
+  width: 260px
 
 #personal-info
   +clearfix
+  +float-left
   background-color: white
-  float: left
-  padding: 25px 10px
   width: 290px
+  padding: 10px 10px
 
 #personal-name-container
   +clearfix
+  +float-left
   background: url( "/img/entry-quote.png" ) no-repeat
   background-position: center left 10px
   background-color: white
-  float: left
+  width: 210px
   padding: 0 0 0 40px
   margin: 0 0 20px
-  width: 210px
 
 #personal-name
   +clearfix
@@ -204,63 +208,64 @@ body
   font-family: $default-font
   font-size: 13px
   line-height: 20px
-  padding: 15px 10px 15px 20px
   width: 170px
+  padding: 15px 10px 15px 20px
 
 #personal-link-gallery
+  +clearfix
+  +float-left
   background: url( "/img/entry-link.png" ) no-repeat
   background-position: center left 10px
   background-color: white
-  float: left
+  width: 210px
   padding: 10px 10px 10px 40px
   margin: 0 0 20px
-  width: 210px
 
 #link-personal-gallery
   +clearfix
   background-color: white
   border-left: 2px solid #c7ccd2
-  color: black
   font-family: $default-font
   font-size: 13px
-  line-height: 20px
-  padding: 15px 10px 15px 20px
+  color: black
   text-decoration: none
+  line-height: 20px
   width: 170px
+  padding: 15px 10px 15px 20px
 
 #personal-social-networks-container
+  +float-left
   background: url( "/img/entry-users.png" ) no-repeat
   background-position: center left 10px
   background-color: white
-  float: left
-  padding: 0 0 0 40px
   width: 210px
+  padding: 0 0 0 40px
 
 #personal-social-networks
   +clearfix
   background-color: white
   border-left: 2px solid #c7ccd2
-  color: black
   font-family: $default-font
   font-size: 13px
-  line-height: 20px
-  padding: 10px 10px 10px 20px
+  color: black
   text-decoration: none
+  line-height: 20px
   width: 170px
+  padding: 10px 10px 10px 20px
 
 
 #entry-quote.png
-  float: right
+  +float-right
 
 .link-social-network
   +hide-text
   +clearfix
+  +float-left
   background-position: center center
   display: block
-  float: left
+  width: 16px
   height: 16px
   padding: 2px
-  width: 16px
 
 #link-social-network-facebook
   background: url( "/img/facebook.png" ) no-repeat
@@ -288,20 +293,20 @@ body
 
 #tweets
   +clearfix
+  +float-left
   background: url( "/img/ribbon-posts.png" ) no-repeat
   background-position: top 33px right -3px
-  float: left
-  height: 230px
   width: 420px
+  height: 230px
   padding: 40px 0 0
 
 #tweets-title
   +hide-text
+  +float-left
   background: url( "/img/tweets.png" )
   display: block
-  float: left
-  height: 64px
   width: 14px
+  height: 64px
 
 #tweets-list
   +clearfix
@@ -311,12 +316,12 @@ body
 
 .tweet
   background-color: white
-  margin: 0 0 15px
-  color: #666665
   font-family: $default-font
   font-size: 12px
-  padding: 12px
+  color: #666665
   line-height: 20px
+  padding: 12px
+  margin: 0 0 15px
 
 .link-on-tweets
   text-decoration: none
@@ -327,35 +332,35 @@ body
 
 #tweets-footer
   +clearfix
+  +float-left
   background: url( "/img/personal-twitter-shadow.png" ) no-repeat
   background-position: bottom center
-  float: left
-  height: 10px
   width: 410px
+  height: 10px
 
 #blogs
   +clearfix
-  float: left
+  +float-left
   width: 1000px
-  padding: 40px 0 0 0
+  padding: 40px 0 0
 
 #blog-entry-list
   +clearfix
 
 #blogs-title
   +hide-text
+  +float-left
   background: url( "/img/blog.png" ) no-repeat
   display: block
-  float: left
-  height: 34px
   width: 14px
+  height: 34px
 
 .blog-entry
   +clearfix
-  float: left
+  +float-left
+  width: 210px
   height: 140px
   padding: 130px 35px 30px 0
-  width: 210px
 
 .blog-entry-title
   +clearfix
@@ -364,10 +369,10 @@ body
   padding: 10px 10px 5px
 
 .link-blog-entry
-  color: red
   font-family: $default-font
   font-size: 12px
   font-weight: bold
+  color: red
   text-decoration: none
 
 .blog-entry-preview
@@ -375,8 +380,8 @@ body
   background-color: white
   font-familY: $default-font
   font-size: 12px
-  height: 90px
   line-height: 18px
+  height: 90px
   padding: 0 10px
 
 .blog-entry-footer
@@ -415,31 +420,31 @@ body
 
 #page-index-nav
   background-color: white
+  width: 940px
   height: 35px
   margin: 0 auto
-  width: 940px
 
 #pages-nav
-  float: left
+  +float-left
 
 .page-nav-item
-  float: left
+  +float-left
   padding: 10px 5px 0 20px
 
 .link-page
-  color: #8b8c8c
   font-family: $default-font
   font-size: 12px
+  color: #8b8c8c
   text-decoration: none
 
 #next-page
-  float: left
+  +float-left
 
 #page-number
-  color: #9a9a9a
-  float: right
+  +float-right
   font-family: $default-font
   font-size: 12px
+  color: #9a9a9a
   padding: 10px 20px
 
 #page-index-footer
@@ -467,54 +472,52 @@ body
 #link-rss
   +hide-text
   +clearfix
+  +float-left
   background: url( "/img/rss.png" ) no-repeat
   display: block
-  float: left
+  width: 16px
   height: 16px
   padding: 1px
-  width: 16px
 
 #link-facebook
   +hide-text
   +clearfix
+  +float-left
   background: url( "/img/facebook.png" ) no-repeat
   display: block
-  float: left
+  width: 16px
   height: 16px
   padding: 1px
-  width: 16px
 
 #link-twitter
   +hide-text
   +clearfix
+  +float-left
   background: url( "/img/twitter.png" ) no-repeat
   display: block
-  float: left
+  width: 16px
   height: 16px
   padding: 1px
-  width: 16px
 
 #copy-rights
-  float: left
-  color: #8b8c8c
+  +float-left
   font-family: $default-font
   font-size: 12px
+  color: #8b8c8c
   padding: 0 20px
 
 #link-theme-designer
-  float: right
+  +float-right
 
 .link-related-icon
+  +float-left
   display: block
-  float: left
 
 .link-related
-  color: #8b8c8c
-  display: block
-  float: left
+  +float-left
   font-family: $default-font
   font-size: 12px
-  padding: 0 10px
+  color: #8b8c8c
   text-decoration: none
-
-
+  display: block
+  padding: 0 10px
