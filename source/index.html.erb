@@ -7,29 +7,31 @@ title: Actme
   <div id="header">
     <ul id="nav">
       <li id="nav-item-logo" class="nav-item">
-        <h1><a id="nav-logo" href="#" title="logo">Actme</a></h1>
+        <h1>
+          <a id="nav-logo" href="#" title="logo">Actme</a>
+        </h1>
       </li>
       <li class="nav-item">
-        <a id="nav-home" class="nav-item-text" href="#" title="home">Home</a>
+        <a id="nav-home" class="nav-item-link" href="#" title="home">Home</a>
       </li>
       <li class="nav-item">
-        <a id="nav-protfolio" class="nav-item-text" href="#" title="protfolio">Protfolio</a>
+        <a id="nav-protfolio" class="nav-item-link" href="#" title="protfolio">Protfolio</a>
       </li>
       <li class="nav-item">
-        <a id="nav-gallery" class="nav-item-text" href="#" title="gallery">Gallery</a>
+        <a id="nav-gallery" class="nav-item-link" href="#" title="gallery">Gallery</a>
       </li>
       <li class="nav-item">
-        <a id="nav-blog" class="nav-item-text" href="#" title="blog">Blog</a>
+        <a id="nav-blog" class="nav-item-link" href="#" title="blog">Blog</a>
       </li>
       <li class="nav-item">
-        <a id="nav-styles" class="nav-item-text" href="#" title="styles">Styles</a>
+        <a id="nav-styles" class="nav-item-link" href="#" title="styles">Styles</a>
       </li>
       <li class="nav-item">
-        <a id="nav-contact" class="nav-item-text" href="#" title="contact">Contact</a>
+        <a id="nav-contact" class="nav-item-link" href="#" title="contact">Contact</a>
       </li>
-      <li id="nav-item-search" class="nav-item">
-        <form action="#">
-          <input id="search" type="text" title="To search type and hit enter" />
+      <li id="nav-item-search" class="">
+        <form id="form-search" action="#">
+          <input id="search" type="text" placeholder="To search type and hit enter" />
         </form>
       </li>
     </ul>
@@ -38,13 +40,18 @@ title: Actme
 </div>
 <div id="main">
   <div id="slider">
-    <h2 id="slider-title">Slider Options for every slider / template</h2>
-    <h3 id="slider-subtitle">Slider Options, 2 effects, time and hover pause</h3>
+    <h2 id="slider-title">
+      <a href="#" id="slider-title-link" title="Slider options">
+      Slider Options for every slider / template</a>
+    </h2>
+    <h3 id="slider-subtitle">
+      <a href="#" id="slider-subtitle-link" title="Slider options, 2 effects, time and hover pause">Slider Options, 2 effects, time and hover pause</a>
+    </h3>
     <div id="slider-controller">
-      <a id="slider-prev" href="#">Previous</a>
-      <a id="slider-next" href="#">Next</a>
+      <a id="slider-prev" href="#" title="Previous">Previous</a>
+      <a id="slider-next" href="#" title="Next">Next</a>
       <div id="slider-draging">
-        <a id="slider-pin" href="#">Move To</a>
+        <a id="slider-pin" href="#" title="Move">Move To</a>
       </div>
     </div>
   </div>
@@ -61,14 +68,30 @@ title: Actme
         </div>
         <div id="personal-social-networks-container">
           <div id="personal-social-networks">
-            <a id="link-social-network-facebook" class="link-social-network" href="#" title="facebook">facebook</a>
-            <a id="link-social-network-twitter" class="link-social-network" href="#" title="twitter">twitter</a>
-            <a id="link-social-network-dribbble" class="link-social-network" href="#" title="dribbble">dribbble</a>
-            <a id="link-social-network-flickr" class="link-social-network" href="#" title="flickr">flickr</a>
-            <a id="link-social-network-deviantart" class="link-social-network" href="#" title="deviantart">deviantart</a>
-            <a id="link-social-network-behance" class="link-social-network" href="#" title="behance">behance</a>
-            <a id="link-social-network-vimeo" class="link-social-network" href="#" title="vimeo">vimeo</a>
-            <a id="link-social-network-xing" class="link-social-network" href="#" title="xing">xing</a>
+            <div class="personal-social-network">
+              <a id="link-social-network-facebook" class="link-social-network" href="#" title="facebook">facebook</a>
+            </div>
+            <div class="personal-social-network">
+              <a id="link-social-network-twitter" class="link-social-network" href="#" title="twitter">twitter</a>
+            </div>
+            <div class="personal-social-network">
+              <a id="link-social-network-dribbble" class="link-social-network" href="#" title="dribbble">dribbble</a>
+            </div>
+            <div class="personal-social-network">
+              <a id="link-social-network-flickr" class="link-social-network" href="#" title="flickr">flickr</a>
+            </div>
+            <div class="personal-social-network">
+              <a id="link-social-network-deviantart" class="link-social-network" href="#" title="deviantart">deviantart</a>
+            </div>
+            <div class="personal-social-network">
+              <a id="link-social-network-behance" class="link-social-network" href="#" title="behance">behance</a>
+            </div>
+            <div class="personal-social-network">
+              <a id="link-social-network-vimeo" class="link-social-network" href="#" title="vimeo">vimeo</a>
+            </div>
+            <div class="personal-social-network">
+              <a id="link-social-network-xing" class="link-social-network" href="#" title="xing">xing</a>
+            </div>
           </div>
         </div>
       </div>
@@ -86,42 +109,98 @@ title: Actme
     <h4 id="blogs-title">BLOG</h4>
     <div id="blog-entry-list">
       <div id="blog-entry-1" class="blog-entry">
-        <div class="blog-entry-title"><a class="link-blog-entry" href="#" title="This is a nice post for o ..">This is a nice post for o ..</a></div>
+        <div class="blog-entry-clip">
+          <a href="#" class="link-blog-entry-clip" title="This is a nice post for o ..">
+            <img src="/img/this-is-a-nice-post-for-our-cool-blog.jpeg" alt="Blog entry clip" class="blog-entry-clip-img">
+          </a>
+        </div>
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="This is a nice post for o ..">This is a nice post for o ..</a>
+        </div>
         <div class="blog-entry-preview">Lorem ipsum dolor sit amet, consecteuter adipiscing elit.<br>Aenean ligula eget ...</div>
         <div class="blog-entry-footer"></div>
       </div>
       <div id="blog-entry-2" class="blog-entry">
-        <div class="blog-entry-title"><a class="link-blog-entry" href="#" title="I diligently worked to pe ..">I diligently worked to pe ..</a></div>
+        <div class="blog-entry-clip">
+          <a href="#" class="link-blog-entry-clip" title="I diligently worked to pe ..">
+            <img src="/img/2.jpeg" alt="Blog entry clip" class="blog-entry-clip-img">
+          </a>
+        </div>
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="I diligently worked to pe ..">I diligently worked to pe ..</a>
+        </div>
         <div class="blog-entry-preview">Buck's first day on the Deya beach was like a nightmare. Every hour was ...</div>
         <div class="blog-entry-footer"></div>
       </div>
       <div id="blog-entry-3" class="blog-entry">
-        <div class="blog-entry-title"><a class="link-blog-entry" href="#" title="Great choice for you">Great choice for you</a></div>
+        <div class="blog-entry-clip">
+          <a href="#" class="link-blog-entry-clip" title="Great choice for you">
+            <img src="/img/3.jpeg" alt="Blog entry clip" class="blog-entry-clip-img">
+          </a>
+        </div>
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Great choice for you">Great choice for you</a>
+        </div>
         <div class="blog-entry-preview">It led, briefly, in the course of the October afternoon, to his closer meeting ...</div>
         <div class="blog-entry-footer"></div>
       </div>
       <div id="blog-entry-4" class="blog-entry">
-        <div class="blog-entry-title"><a class="link-blog-entry" href="#" title="Beautiful things in life, ..">Beautiful things in life, ..</a></div>
+        <div class="blog-entry-clip">
+          <a href="#" class="link-blog-entry-clip" title="Beautiful things in life, ..">
+            <img src="/img/4-1.jpeg" alt="Blog entry clip" class="blog-entry-clip-img">
+          </a>
+        </div>
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Beautiful things in life, ..">Beautiful things in life, ..</a>
+        </div>
         <div class="blog-entry-preview">It led, briefly, in the course of the October afternoon, to his closer meeting ...</div>
         <div class="blog-entry-footer"></div>
       </div>
       <div id="blog-entry-5" class="blog-entry">
-        <div class="blog-entry-title"><a class="link-blog-entry" href="#" title="Get a littel help about D..">Get a littel help about D..</a></div>
+        <div class="blog-entry-clip">
+          <a href="#" class="link-blog-entry-clip" title="Get a littel help about D..">
+            <img src="/img/5.jpeg" alt="Blog entry list" class="blog-entry-clip-img">
+          </a>
+        </div>
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Get a littel help about D..">Get a littel help about D..</a>
+        </div>
         <div class="blog-entry-preview">What determined the speech that startled him in the course of their encounter ...</div>
         <div class="blog-entry-footer"></div>
       </div>
       <div id="blog-entry-6" class="blog-entry">
-        <div class="blog-entry-title"><a class="link-blog-entry" href="#" title="Something To Be Done ..">Something To Be Done ..</a></div>
+        <div class="blog-entry-clip">
+          <a href="#" class="link-blog-entry-clip" title="Something To Be Done ..">
+            <img src="/img/6.jpeg" alt="Blog entry clip" class="blog-entry-clip-img">
+          </a>
+        </div>
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Something To Be Done ..">Something To Be Done ..</a>
+        </div>
         <div class="blog-entry-preview">He was a very sick white man. He rode pick-a-back on a woolly-headed, ...</div>
         <div class="blog-entry-footer"></div>
       </div>
       <div id="blog-entry-7" class="blog-entry">
-        <div class="blog-entry-title"><a class="link-blog-entry" href="#" title="Great pic and great reali ..">Great pic and great reali ..</a></div>
+        <div class="blog-entry-clip">
+          <a href="#" class="link-blog-entry-clip" title="Great pic and great reali ..">
+            <img src="/img/7.jpeg" alt="Blog entry clip" class="blog-entry-clip-img">
+          </a>
+        </div>
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Great pic and great reali ..">Great pic and great reali ..</a>
+        </div>
         <div class="blog-entry-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus sagittis ...</div>
         <div class="blog-entry-footer"></div>
       </div>
       <div id="blog-entry-8" class="blog-entry">
-        <div class="blog-entry-title"><a class="link-blog-entry" href="#" title="Realistic imagery can tra ..">Realistic imagery can tra ..</a></div>
+        <div class="blog-entry-clip">
+          <a href="#" class="link-blog-entry-clip" title="Realistic imagery can tra ..">
+            <img src="/img/8.jpeg" alt="Blog entry clip" class="blog-entry-clip-img">
+          </a>
+        </div>
+        <div class="blog-entry-title">
+          <a class="link-blog-entry" href="#" title="Realistic imagery can tra ..">Realistic imagery can tra ..</a>
+        </div>
         <div class="blog-entry-preview">Vestibulum eget porttitor ante.<br>Donec consectetur odio in ligula bibendum ...</div>
         <div class="blog-entry-footer"></div>
       </div>
@@ -148,16 +227,22 @@ title: Actme
 <div id="footer">
   <div id="wrap-footer">
     <div id="related-links">
-      <a id="link-rss" class="link-related-icon" href="#" title="Subscribe us!">Scribe our RSS feed</a>
-      <a id="link-facebook" class="link-related-icon" href="#" title="Facebook">Check out our faceback fans page</a>
-      <a id="link-twitter" class="link-related-icon" href="#" title="Twitter">Follow us on Twitter!</a>
+      <div class="related-link">
+        <a id="link-rss" class="link-related-icon" href="#" title="Subscribe us!">Scribe our RSS feed</a>
+      </div>
+      <div class="related-link">
+        <a id="link-facebook" class="link-related-icon" href="#" title="Facebook">Check out our faceback fans page</a>
+      </div>
+      <div class="related-link">
+        <a id="link-twitter" class="link-related-icon" href="#" title="Twitter">Follow us on Twitter!</a>
+      </div>
       <p id="copy-rights">Copyright 2011</p>
       <a id="link-home" class="link-related" href="#" class="links-site-content" title="Home">Home</a>
       <a id="link-blog" class="link-related" href="#" class="links-site-content" title="Blog">Blog</a>
       <a id="link-404" class="link-related" href="#" class="links-site-content" title="404">404</a>
       <a id="link-sitemap" class="link-related" href="#" class="links-site-content" title="Sitemap">Sitemap</a>
       <a id="link-contact" class="link-related" href="#" class="links-site-content" title="Contact">Contact</a>
-      <a id="link-theme-designer" class="link-related" title="Themes designed by lulianN">Wordpress Theme by lulianN</a>
+      <a id="link-theme-designer" class="link-related" href="#" title="Themes designed by lulianN">Wordpress Theme by lulianN</a>
     </div>
   </div>
 </div>

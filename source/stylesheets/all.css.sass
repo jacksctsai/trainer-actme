@@ -36,15 +36,15 @@ body
 
 #nav
   +clearfix
+  position: relative
 
 .nav-item
   +float-left
   height: 47px
-  margin: 0 0 0 35px
 
 #nav-item-logo
   width: 170px
-  margin: 0
+  padding: 0
 
 #nav-logo
   +clearfix
@@ -55,25 +55,28 @@ body
   height: 43px
   margin: auto
 
-.nav-item-text
+.nav-item-link
   font-family: $default-font
   font-size: 12px
   color: #777777
   text-decoration: none
   display: block
-  padding: 18px 0 0
+  padding: 18px 20px
   &:hover, &:active
-    color: #bfc1b0
+    color: white
+    opacity: 0.9
 
 #nav-item-search
-  +float-right
-  margin: 10px 0
+  position: absolute
+  top: 10px
+  right: 10px
 
 #search
-  +hide-text
   background: url( "/img/bg-search.png" ) no-repeat
-  width: 210px
+  font-size: 13px
+  width: 185px
   height: 27px
+  padding: 0 0 0 25px
   border: none
 
 #main
@@ -93,29 +96,41 @@ body
 
 #slider-title
   background-color: rgba( 0, 0, 0, 0.6 )
-  font-family: $default-font
-  font-size: 22px
-  color: #f9f6ef
-  opacity: 0.6
-  width: 392px
-  height: 20px
-  padding: 15px
+  width: 420px
+  height: 50px
   position: absolute
   top: 80px
   left: 20px
 
+#slider-title-link
+  font-family: $default-font
+  font-size: 22px
+  color: #f9f6ef
+  opacity: 0.6
+  text-decoration: none
+  display: block
+  padding: 15px
+  &:hover, &:active
+    opacity: 0.9
+
 #slider-subtitle
   background-color: rgba( 254, 254, 254, 0.7 )
-  font-family: $default-font
-  font-size: 13px
-  color: #444448
-  opacity: 0.6
-  width: 290px
-  height: 10px
-  padding: 15px 13px 15px 20px
+  width: 330px
   position: absolute
   top: 130px
   left: 20px
+
+#slider-subtitle-link
+  font-family: $default-font
+  font-size: 14px
+  color: #444448
+  opacity: 0.6
+  text-decoration: none
+  display: block
+  padding: 15px
+  &:hover, &:active
+    color: black
+    opacity: 0.9
 
 #slider-controller
   position: absolute
@@ -123,20 +138,26 @@ body
   left: 40px
 
 #slider-prev
+  +clearfix
   +hide-text
   +float-left
-  background: url( "/img/arrow-prev2.png" )
+  background: url( "/img/arrow-prev2.png" ) no-repeat
   display: block
   width: 15px
   height: 15px
+  &:hover, &:active
+    background-position: top -15px left
 
 #slider-next
+  +clearfix
   +hide-text
   +float-left
-  background: url( "/img/arrow-next2.png" )
+  background: url( "/img/arrow-next2.png" ) no-repeat
   display: block
   height: 15px
   width: 15px
+  &:hover, &:active
+    background-position: top -15px left
 
 #slider-draging
   +float-left
@@ -149,12 +170,17 @@ body
 
 #slider-pin
   +hide-text
-  background: url( "/img/pagination.png" ) top 8px left 0px
+  background: url( "/img/pagination.png" )
+  background-position: top 8px left 0px
   display: block
   width: 16px
   height: 8px
   position: absolute
   left: 45px
+  &:hover, &:active
+    top: -2px
+    left: 43px
+    border: 2px solid black
 
 #personal
   +clearfix
@@ -186,14 +212,11 @@ body
 
 #personal-info
   +clearfix
-  +float-left
   background-color: white
-  width: 290px
+  width: 240px
   padding: 10px 10px
 
 #personal-name-container
-  +clearfix
-  +float-left
   background: url( "/img/entry-quote.png" ) no-repeat
   background-position: center left 10px
   background-color: white
@@ -212,17 +235,14 @@ body
   padding: 15px 10px 15px 20px
 
 #personal-link-gallery
-  +clearfix
-  +float-left
   background: url( "/img/entry-link.png" ) no-repeat
   background-position: center left 10px
   background-color: white
-  width: 210px
+  width: 200px
   padding: 10px 10px 10px 40px
   margin: 0 0 20px
 
 #link-personal-gallery
-  +clearfix
   background-color: white
   border-left: 2px solid #c7ccd2
   font-family: $default-font
@@ -232,9 +252,10 @@ body
   line-height: 20px
   width: 170px
   padding: 15px 10px 15px 20px
+  &:hover, &:active
+    text-decoration: underline
 
 #personal-social-networks-container
-  +float-left
   background: url( "/img/entry-users.png" ) no-repeat
   background-position: center left 10px
   background-color: white
@@ -252,20 +273,22 @@ body
   line-height: 20px
   width: 170px
   padding: 10px 10px 10px 20px
+  position: relative
 
-
-#entry-quote.png
-  +float-right
-
-.link-social-network
-  +hide-text
+.personal-social-network
   +clearfix
   +float-left
-  background-position: center center
-  display: block
   width: 16px
   height: 16px
   padding: 2px
+
+.link-social-network
+  +hide-text
+  background-position: center center
+  display: block
+  position: relative
+  &:hover, &:active
+    top: -2px
 
 #link-social-network-facebook
   background: url( "/img/facebook.png" ) no-repeat
@@ -303,6 +326,7 @@ body
 #tweets-title
   +hide-text
   +float-left
+  +clearfix
   background: url( "/img/tweets.png" )
   display: block
   width: 14px
@@ -325,14 +349,16 @@ body
 
 .link-on-tweets
   text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
 
 .tweet-datetime
   font-size: 11px
   padding: 0 0 0 5px
 
 #tweets-footer
-  +clearfix
   +float-left
+  +clearfix
   background: url( "/img/personal-twitter-shadow.png" ) no-repeat
   background-position: bottom center
   width: 410px
@@ -350,6 +376,7 @@ body
 #blogs-title
   +hide-text
   +float-left
+  +clearfix
   background: url( "/img/blog.png" ) no-repeat
   display: block
   width: 14px
@@ -359,8 +386,14 @@ body
   +clearfix
   +float-left
   width: 210px
-  height: 140px
-  padding: 130px 35px 30px 0
+  height: 230px
+  padding: 0 35px 30px 0
+
+.link-blog-entry-clip
+  display: block
+
+.blog-entry-clip-img
+  display: block
 
 .blog-entry-title
   +clearfix
@@ -374,44 +407,21 @@ body
   font-weight: bold
   color: red
   text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
 
 .blog-entry-preview
   +clearfix
   background-color: white
-  font-familY: $default-font
+  font-family: $default-font
   font-size: 12px
   line-height: 18px
-  height: 90px
-  padding: 0 10px
+  padding: 0 10px 10px
 
 .blog-entry-footer
   background: url( "/img/post-personal-shadow.png" ) no-repeat
   background-position: bottom center
   height: 10px
-
-#blog-entry-1
-  background: url( "/img/this-is-a-nice-post-for-our-cool-blog.jpeg" ) no-repeat
-
-#blog-entry-2
-  background: url( "/img/2.jpeg" ) no-repeat
-
-#blog-entry-3
-  background: url( "/img/3.jpeg" ) no-repeat
-
-#blog-entry-4
-  background: url( "/img/4-1.jpeg" ) no-repeat
-
-#blog-entry-5
-  background: url( "/img/5.jpeg" ) no-repeat
-
-#blog-entry-6
-  background: url( "/img/6.jpeg" ) no-repeat
-
-#blog-entry-7
-  background: url( "/img/7.jpeg" ) no-repeat
-
-#blog-entry-8
-  background: url( "/img/8.jpeg" ) no-repeat
 
 #page-index
   +clearfix
@@ -426,9 +436,12 @@ body
 
 #pages-nav
   +float-left
+  +clearfix
 
 .page-nav-item
   +float-left
+  +clearfix
+  width: 10px
   padding: 10px 5px 0 20px
 
 .link-page
@@ -436,12 +449,18 @@ body
   font-size: 12px
   color: #8b8c8c
   text-decoration: none
+  &:hover, &:active
+    font-size: 14px
+    color: black
+    text-decoration: underline
 
 #next-page
   +float-left
+  +clearfix
 
 #page-number
   +float-right
+  +clearfix
   font-family: $default-font
   font-size: 12px
   color: #9a9a9a
@@ -469,20 +488,22 @@ body
 #related-links
   +clearfix
 
+.related-link
+  +float-left
+  +clearfix
+  padding: 1px 2px
+
 #link-rss
   +hide-text
-  +clearfix
-  +float-left
   background: url( "/img/rss.png" ) no-repeat
   display: block
   width: 16px
   height: 16px
-  padding: 1px
 
 #link-facebook
   +hide-text
-  +clearfix
   +float-left
+  +clearfix
   background: url( "/img/facebook.png" ) no-repeat
   display: block
   width: 16px
@@ -491,8 +512,8 @@ body
 
 #link-twitter
   +hide-text
-  +clearfix
   +float-left
+  +clearfix
   background: url( "/img/twitter.png" ) no-repeat
   display: block
   width: 16px
@@ -501,6 +522,7 @@ body
 
 #copy-rights
   +float-left
+  +clearfix
   font-family: $default-font
   font-size: 12px
   color: #8b8c8c
@@ -508,16 +530,21 @@ body
 
 #link-theme-designer
   +float-right
+  +clearfix
 
 .link-related-icon
   +float-left
+  +clearfix
   display: block
 
 .link-related
   +float-left
+  +clearfix
   font-family: $default-font
   font-size: 12px
   color: #8b8c8c
   text-decoration: none
   display: block
   padding: 0 10px
+  &:hover, &:active
+    text-decoration: underline
