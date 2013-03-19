@@ -53,17 +53,17 @@ body
   display: block
   width: 150px
   height: 43px
-  margin: auto
+  margin: 0 auto
 
 .nav-item-link
   font-family: $default-font
   font-size: 12px
-  color: #777777
+  color: #777
   text-decoration: none
   display: block
   padding: 18px 20px
   &:hover, &:active
-    color: white
+    color: #fff
     opacity: 0.9
 
 #nav-item-search
@@ -82,6 +82,7 @@ body
 #main
   +clearfix
   width: 980px
+  padding: 0 0 80px
   margin: 0 auto
 
 #slider
@@ -129,7 +130,7 @@ body
   display: block
   padding: 15px
   &:hover, &:active
-    color: black
+    color: #000
     opacity: 0.9
 
 #slider-controller
@@ -146,7 +147,7 @@ body
   width: 15px
   height: 15px
   &:hover, &:active
-    background-position: top -15px left
+    background-position: 0 -15px
 
 #slider-next
   +clearfix
@@ -157,7 +158,7 @@ body
   height: 15px
   width: 15px
   &:hover, &:active
-    background-position: top -15px left
+    background-position: 0 -15px
 
 #slider-draging
   +float-left
@@ -171,7 +172,7 @@ body
 #slider-pin
   +hide-text
   background: url( "/img/pagination.png" )
-  background-position: top 8px left 0px
+  background-position: 0px 8px
   display: block
   width: 16px
   height: 8px
@@ -180,18 +181,20 @@ body
   &:hover, &:active
     top: -2px
     left: 43px
-    border: 2px solid black
+    border: 2px solid #000
 
 #personal
   +clearfix
   +float-left
+  background: url( "/img/post-personal-shadow.png" ) no-repeat
+  background-position: 50% 100%
   width: 510px
-  padding: 40px 30px 0 0
+  padding: 40px 30px 10px 0
 
 #personal-title
   +hide-text
   +float-left
-  background: url( "/img/personal.png" )
+  background: url( "/img/personal.png" ) no-repeat
   display: block
   width: 14px
   height: 64px
@@ -205,28 +208,27 @@ body
 #personal-detail
   +clearfix
   +float-left
-  background: url( "/img/personal-nav.png" ) no-repeat
-  background-position: bottom right
-  background-color: white
   width: 260px
 
 #personal-info
   +clearfix
-  background-color: white
+  background-color: #fff
   width: 240px
-  padding: 10px 10px
+  padding: 10px 10px 0
 
-#personal-name-container
+.personal-info-item
+  padding: 0 0 20px
+
+#personal-name-wrap
   background: url( "/img/entry-quote.png" ) no-repeat
-  background-position: center left 10px
-  background-color: white
+  background-position: 10px 50%
+  background-color: #fff
   width: 210px
   padding: 0 0 0 40px
-  margin: 0 0 20px
 
 #personal-name
   +clearfix
-  background-color: white
+  background-color: #fff
   border-left: 2px solid #c7ccd2
   font-family: $default-font
   font-size: 13px
@@ -236,18 +238,17 @@ body
 
 #personal-link-gallery
   background: url( "/img/entry-link.png" ) no-repeat
-  background-position: center left 10px
-  background-color: white
+  background-position: 10px 50%
+  background-color: #fff
   width: 200px
   padding: 10px 10px 10px 40px
-  margin: 0 0 20px
 
 #link-personal-gallery
-  background-color: white
+  background-color: #fff
   border-left: 2px solid #c7ccd2
   font-family: $default-font
   font-size: 13px
-  color: black
+  color: #000
   text-decoration: none
   line-height: 20px
   width: 170px
@@ -255,20 +256,23 @@ body
   &:hover, &:active
     text-decoration: underline
 
-#personal-social-networks-container
+#personal-info-social-networks
+  padding: 0 0 10px
+
+#personal-social-networks-wrap
   background: url( "/img/entry-users.png" ) no-repeat
-  background-position: center left 10px
-  background-color: white
+  background-position: 10px 50%
+  background-color: #fff
   width: 210px
   padding: 0 0 0 40px
 
 #personal-social-networks
   +clearfix
-  background-color: white
+  background-color: #fff
   border-left: 2px solid #c7ccd2
   font-family: $default-font
   font-size: 13px
-  color: black
+  color: #000
   text-decoration: none
   line-height: 20px
   width: 170px
@@ -284,7 +288,7 @@ body
 
 .link-social-network
   +hide-text
-  background-position: center center
+  background-position: 50% 50%
   display: block
   position: relative
   &:hover, &:active
@@ -314,9 +318,15 @@ body
 #link-social-network-xing
   background: url( "/img/xing.png" ) no-repeat
 
-#tweets
+#tweets-wrap
   +clearfix
   +float-left
+  background: url( "/img/personal-twitter-shadow.png" ) no-repeat
+  background-position: bottom 2px center
+  padding: 0
+
+#tweets
+  +clearfix
   background: url( "/img/ribbon-posts.png" ) no-repeat
   background-position: top 33px right -3px
   width: 420px
@@ -334,18 +344,20 @@ body
 
 #tweets-list
   +clearfix
+  +border-top-right-radius( 7px )
   background: url( "/img/line-header.png" )
-  border-radius: 0 7px 0 0
   padding: 15px
 
 .tweet
-  background-color: white
+  background-color: #fff
   font-family: $default-font
   font-size: 12px
   color: #666665
   line-height: 20px
   padding: 12px
-  margin: 0 0 15px
+
+.tweet-wrap
+  padding: 0 0 15px
 
 .link-on-tweets
   text-decoration: none
@@ -356,19 +368,12 @@ body
   font-size: 11px
   padding: 0 0 0 5px
 
-#tweets-footer
-  +float-left
-  +clearfix
-  background: url( "/img/personal-twitter-shadow.png" ) no-repeat
-  background-position: bottom center
-  width: 410px
-  height: 10px
-
 #blogs
   +clearfix
   +float-left
   width: 1000px
   padding: 40px 0 0
+  margin: 0 auto
 
 #blog-entry-list
   +clearfix
@@ -385,6 +390,8 @@ body
 .blog-entry
   +clearfix
   +float-left
+  background: url( "/img/post-personal-shadow.png" ) no-repeat
+  background-position: bottom 15px left
   width: 210px
   height: 230px
   padding: 0 35px 30px 0
@@ -397,7 +404,7 @@ body
 
 .blog-entry-title
   +clearfix
-  background-color: white
+  background-color: #fff
   height: 25px
   padding: 10px 10px 5px
 
@@ -412,24 +419,21 @@ body
 
 .blog-entry-preview
   +clearfix
-  background-color: white
+  background-color: #fff
   font-family: $default-font
   font-size: 12px
   line-height: 18px
   padding: 0 10px 10px
 
-.blog-entry-footer
-  background: url( "/img/post-personal-shadow.png" ) no-repeat
-  background-position: bottom center
-  height: 10px
-
 #page-index
   +clearfix
+  background: url( "/img/shadow-slider-fw.png" ) no-repeat
+  background-position: 50% 100%
   clear: both
-  padding: 0 0 80px 0
+  padding: 0 0 10px 0
 
 #page-index-nav
-  background-color: white
+  background-color: #fff
   width: 940px
   height: 35px
   margin: 0 auto
@@ -451,7 +455,7 @@ body
   text-decoration: none
   &:hover, &:active
     font-size: 14px
-    color: black
+    color: #000
     text-decoration: underline
 
 #next-page
@@ -466,23 +470,17 @@ body
   color: #9a9a9a
   padding: 10px 20px
 
-#page-index-footer
-  background: url( "/img/shadow-slider-fw.png" ) no-repeat
-  background-position: bottom center
-  width: 950px
-  height: 10px
+#footer-wrap
+  +clearfix
+  background-color: #fff
+  width: 100%
 
 #footer
   +clearfix
-  background-color: white
-  width: 100%
-
-#wrap-footer
-  +clearfix
   background: url( "/img/bg-footer-top.png" ) no-repeat
-  background-position: top center
+  background-position: 50% 0
   width: 960px
-  padding: 30px 0 60px 0
+  padding: 30px 0 60px
   margin: 0 auto
 
 #related-links
